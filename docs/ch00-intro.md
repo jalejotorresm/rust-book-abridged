@@ -1,83 +1,91 @@
 ---
 sidebar_position: 1
 slug: /
-title: "The Rust Book (Abridged)"
+title: "El libro de Rust (Resumido)"
 hide_title: true
 ---
 
 <div align="center">
-    <h1>The Rust Book (Abridged)</h1>
+    <h1>El libro de Rust (Resumido)</h1>
     <p>v1.0.0</p>
-    <p>By Jason Walton</p>
-    <p>Based on <a href="https://doc.rust-lang.org/stable/book/">"The Rust Programming Language"</a> by Steve Klabnik and Carol Nichols.</p>
+    <p>Autor: Jason Walton</p>
+    <p>Basado en <a href="https://doc.rust-lang.org/stable/book/">"El Lenguaje de Programación Rust"</a> de Steve Klabnik y Carol Nichols.</p>
 </div>
 
-PDF version of this book is available [here](https://github.com/jwalton/rust-book-abridged/releases/latest/download/rust-book-abridged.pdf).
+La versión PDF de este libro (original en inglés) está disponible [aquí](https://github.com/jwalton/rust-book-abridged/releases/latest/download/rust-book-abridged.pdf).
 
-## What is this?
+## ¿De qué trata este libro?
 
-This is an abridged - or perhaps a better word would be condensed - version of ["The Rust Programming Language"](https://doc.rust-lang.org/stable/book/title-page.html) (AKA "the Rust Book"). This is not an original work - all the chapter names and examples in this book have been copied verbatim from the original, but all of the prose has been rewritten from scratch, leaving out anything that's not about learning Rust. This book is about 1/2 the length of the original, but I don't think it is missing anything that an experienced software developer wouldn't already know.
+Esta es una versión resumida (o quizás sería más apropiado decir condensada) de ["El Lenguaje de Programación Rust" (Version en inglés)](https://doc.rust-lang.org/stable/book/title-page.html) (también conocido como "El libro de Rust"). Esto no es un trabajo original: todos los nombres de los capítulos y ejemplos en este libro han sido copiados textualmente del original, pero toda la prosa ha sido reescrita desde cero, omitiendo cualquier cosa que no trate sobre aprender Rust. Este libro tiene aproximadamente la mitad de la extensión del original, pero no creo que le falte nada que un desarrollador de software experimentado no sepa ya.
 
-The Rust Book is a great resource for learning Rust, especially if you're new to programming. If you fall into this category, then I strongly suggest you put this book down and go read it instead. But... the Rust Book is quite wordy. If you're already familiar with one or more other programming languages, then you are likely already familiar with a lot of the concepts the book covers, and you might benefit from this shorter version. If you are already familiar with ideas like the stack and the heap, with test driven development, with the [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), then this might be a better read.
+El libro de Rust es un recurso excelente para aprender Rust, especialmente si eres nuevo en la programación. Si estás en esta categoría, te sugiero encarecidamente que dejes este libro y leas el original. Pero... el libro de Rust es bastante extenso. Si ya estás familiarizado con uno o más lenguajes de programación, es probable que ya conozcas muchos de los conceptos que el libro cubre, y podrías beneficiarte de esta versión más corta. Si ya estás familiarizado con ideas como el Stack y el Heap, el desarrollo basado en tests, o el [principio DRY](https://es.wikipedia.org/wiki/No_te_repitas), entonces esta versión podría ser una mejor lectura para ti.
 
-This isn't meant to be a criticism of the Rust Book. It's excellent and well written, and there's a reason why it's highly recommended. The problem here is not with the original book, but more a mismatch when it comes to intended audience.
+Esto no pretende ser una crítica al libro de Rust. Es excelente y está bien escrito, y hay una razón por la cual es altamente recomendado. El problema aquí no es el libro original, sino más bien una desconexión en cuanto al público objetivo.
 
-## What's different about this book?
+## ¿Qué es lo diferente de este libro?
 
-As mentioned above, the chapter names in this book are all the same as in the original, and in many cases the subsections in each chapter are the same. In most cases examples have been copied directly from the original. Keeping the original structure and examples hopefully makes it easy to jump back and forth between this book and the original, in case there are places where this book is unclear or covers concepts you are not familiar with.
+Como se mencionó anteriormente, los nombres de los capítulos en este libro son los mismos que en el original, y en muchos casos las subsecciones dentro de cada capítulo también lo son. En la mayoría de los casos, los ejemplos han sido copiados directamente del original. Mantener la estructura y los ejemplos originales busca facilitar el salto entre un libro y otro en caso de que este no sea claro o cubra conceptos con los que no estés familiarizado.
 
-Where the original would build up a code example piece by piece, in most cases this version presents the finished code so you can read through it, and then points out some interesting parts. Where possible I've tried to add in material I think an advanced reader would find interesting. In some places this explains things in a different way than the original. This also adds an extra bonus chapter about async programming!
+En las partes donde el original construye un ejemplo de código paso a paso, esta versión en la mayoría de los casos presenta el código terminado para que lo leas, y luego señala algunas partes interesantes. En la medida de lo posible, he tratado de agregar material que creo que un lector avanzado encontraría interesante. En algunos casos, esto explica las cosas de una manera diferente al original. Esta versión también añade un capítulo adicional sobre programación asincrónica.
 
-I have a great deal of experience in TypeScript, Java, C/C++, Go, and a few other languages. I spent about two weeks putting this book together, reading the original, condensing it, and researching parts that weren't clear. Hopefully someone finds this useful! But I am new to Rust so if you find something that doesn't make sense, please feel free to [raise an issue](https://github.com/jwalton/rust-book-abridged).
+Tengo una gran experiencia en TypeScript, Java, C/C++, Go y algunos otros lenguajes. Pasé aproximadamente dos semanas armando este libro, leyendo el original, resumiéndolo e investigando partes que no estaban claras. ¡Espero que alguien lo encuentre útil! Sin embargo, soy nuevo en Rust, así que si encuentras algo que no tenga sentido, no dudes en [informarlo a través de un issue en el repositorio original](https://github.com/jwalton/rust-book-abridged).
 
-This book was written entirely by a human - none of this is generated by ChatGPT.
+Este libro fue escrito completamente por un humano: nada de esto fue generado por ChatGPT.
 
-If you enjoy this book, please [give it a star on GitHub](https://github.com/jwalton/rust-book-abridged).
+Si disfrutas este libro, por favor [dale una estrella al repositorio original en GitHub](https://github.com/jwalton/rust-book-abridged).
 
-## Table of Contents
+## Tabla de Contenidos
 
-- [Chapter 1: Getting Started][chap1]
-- [Chapter 2: Guessing Game][chap2]
-- [Chapter 3: Common Programming Concepts][chap3]
-- [Chapter 4: Ownership, References, and Slices][chap4]
-- [Chapter 5: Using Structs to Structure Related Data][chap5]
-- [Chapter 6: Enums and Pattern Matching][chap6]
-- [Chapter 7: Managing Growing Projects with Packages, Crates, and Modules][chap7]
-- [Chapter 8: Common Collections][chap8]
-- [Chapter 9: Error Handling][chap9]
-- [Chapter 10: Generic Types, Traits, and Lifetimes][chap10]
-- [Chapter 11: Writing Automated Tests][chap11]
-- [Chapter 12: An I/O Project: Building a Command Line Program][chap12]
-- [Chapter 13: Functional Language Features: Iterators and Closures][chap13]
-- [Chapter 14: More About Cargo and Crates.io][chap14]
-- [Chapter 15: Smart Pointers][chap15]
-- [Chapter 16: Fearless Concurrency][chap16]
-- [Chapter 17: Object Oriented Features of Rust][chap17]
-- [Chapter 18: Patterns and Matching][chap18]
-- [Chapter 19: Advanced Features][chap19]
-- [Chapter 20: Multithreaded Web Server][chap20]
-- [Chapter 21: Bonus Chapter: Async Programming][chap21]
+- [Capítulo 1: Comenzando][chap1]
+- [Capítulo 2: Juego de Adivinanzas][chap2]
+- [Capítulo 3: Conceptos Comunes de Programación][chap3]
+- [Capítulo 4: Ownership, Referencias y Slices][chap4]
+- [Capítulo 5: Usando Structs para Agrupar Datos Relacionados][chap5]
+- [Capítulo 6: Enums y Pattern Matching][chap6]
+- [Capítulo 7: Gestionando Proyectos en Crecimiento con Paquetes, Crates y Módulos][chap7]
+- [Capítulo 8: Colecciones Comunes][chap8]
+- [Capítulo 9: Manejo de Errores][chap9]
+- [Capítulo 10: Tipos Genéricos, Traits y Lifetimes][chap10]
+- [Capítulo 11: Escribiendo Tests Automatizados][chap11]
+- [Capítulo 12: Un Proyecto de I/O: Construyendo un Programa de Línea de Comandos][chap12]
+- [Capítulo 13: Características de Lenguajes Funcionales: Iteradores y Closures][chap13]
+- [Capítulo 14: Más sobre Cargo y Crates.io][chap14]
+- [Capítulo 15: Smart Pointers][chap15]
+- [Capítulo 16: Concurrencia sin Miedo][chap16]
+- [Capítulo 17: Características de Rust Orientadas a Objetos][chap17]
+- [Capítulo 18: Patterns y Matching][chap18]
+- [Capítulo 19: Características Avanzadas][chap19]
+- [Capítulo 20: Servidor Web Multithreaded][chap20]
+- [Capítulo 21: Capítulo Extra: Programación Asincrónica][chap21]
 
-[chap1]: ./ch01-getting-started.md "Chapter 1: Getting Started"
-[chap2]: ./ch02-guessing-game.md "Chapter 2: Guessing Game"
-[chap3]: ./ch03-common-programming-concepts.md "Chapter 3: Common Programming Concepts"
-[chap4]: ./ch04-ownership.md "Chapter 4: Ownership, References, and Slices"
-[chap5]: ./ch05-structs.md "Chapter 5: Using Structs to Structure Related Data"
-[chap6]: ./ch06-enums-and-pattern-matching.md "Chapter 6: Enums and Pattern Matching"
-[chap7]: ./ch07-packages-crates-modules.md "Chapter 7: Managing Growing Projects with Packages, Crates, and Modules"
-[chap8]: ./ch08-common-collections.md "Chapter 8: Common Collections"
-[chap9]: ./ch09-error-handling.md "Chapter 9: Error Handling"
-[chap10]: ./ch10/ch10-01-generic-data-types.md "Chapter 10: Generic Types, Traits, and Lifetimes"
-[chap11]: ./ch11-automated-tests.md "Chapter 11: Writing Automated Tests"
-[chap12]: ./ch12-io-project-cli.md "Chapter 12: An I/O Project: Building a Command Line Program"
-[chap13]: ./ch13-functional-language-features.md "Chapter 13: Functional Language Features: Iterators and Closures"
-[chap14]: ./ch14-more-about-cargo.md "Chapter 14: More About Cargo and Crates.io"
-[chap15]: ./ch15-smart-pointers.md "Chapter 15: Smart Pointers"
-[chap16]: ./ch16-fearless-concurrency.md "Chapter 16: Fearless Concurrency"
-[chap17]: ./ch17-object-oriented-features.md "Chapter 17: Object Oriented Features of Rust"
-[chap18]: ./ch18-patterns-and-matching.md "Chapter 18: Patterns and Matching"
-[chap19]: ./ch19/ch19-01-unsafe.md "Chapter 19: Advanced Features"
-[chap20]: ./ch20/ch20-01-single-threaded-web-server.md "Chapter 20: Multithreaded Web Server"
-[chap21]: ./ch21-async.md "Chapter 21: Bonus Chapter: Async Programming"
+[chap1]: ./ch01-getting-started.md "Capítulo 1: Comenzando"
+[chap2]: ./ch02-guessing-game.md "Capítulo 2: Juego de Adivinanzas"
+[chap3]: ./ch03-common-programming-concepts.md "Capítulo 3: Conceptos Comunes de Programación"
+[chap4]: ./ch04-ownership.md "Capítulo 4: Ownership, Referencias y Slices"
+[chap5]: ./ch05-structs.md "Capítulo 5: Usando Structs para Agrupar Datos Relacionados"
+[chap6]: ./ch06-enums-and-pattern-matching.md "Capítulo 6: Enums y Pattern Matching"
+[chap7]: ./ch07-packages-crates-modules.md "Capítulo 7: Gestionando Proyectos en Crecimiento con Paquetes, Crates y Módulos"
+[chap8]: ./ch08-common-collections.md "Capítulo 8: Colecciones Comunes"
+[chap9]: ./ch09-error-handling.md "Capítulo 9: Manejo de Errores"
+[chap10]: ./ch10/ch10-01-generic-data-types.md "Capítulo 10: Tipos Genéricos, Traits y Lifetimes"
+[chap11]: ./ch11-automated-tests.md "Capítulo 11: Escribiendo Tests Automatizados"
+[chap12]: ./ch12-io-project-cli.md "Capítulo 12: Un Proyecto de I/O: Construyendo un Programa de Línea de Comandos"
+[chap13]: ./ch13-functional-language-features.md "Capítulo 13: Características de Lenguajes Funcionales: Iteradores y Closures"
+[chap14]: ./ch14-more-about-cargo.md "Capítulo 14: Más sobre Cargo y Crates.io"
+[chap15]: ./ch15-smart-pointers.md "Capítulo 15: Smart Pointers"
+[chap16]: ./ch16-fearless-concurrency.md "Capítulo 16: Concurrencia sin Miedo"
+[chap17]: ./ch17-object-oriented-features.md "Capítulo 17: Características de Rust Orientadas a Objetos"
+[chap18]: ./ch18-patterns-and-matching.md "Capítulo 18: Patterns y Matching"
+[chap19]: ./ch19/ch19-01-unsafe.md "Capítulo 19: Características Avanzadas"
+[chap20]: ./ch20/ch20-01-single-threaded-web-server.md "Capítulo 20: Servidor Web Multithreaded"
+[chap21]: ./ch21-async.md "Capítulo 21: Capítulo Extra: Programación Asincrónica"
 
-(This version of this book is based on [commit c06006](https://github.com/rust-lang/book/commit/c06006157b14b3d47b5c716fc392b77f3b2e21ce)).
+(Esta versión del libro está basada en [commit c06006 del libro original en inglés](https://github.com/rust-lang/book/commit/c06006157b14b3d47b5c716fc392b77f3b2e21ce)).
+
+:::note Comentario del Traductor
+¡Hola! Te agradezco por darle una oportunidad a este libro. Espero que tu experiencia sea muy satisfactoria. Quiero usar esta sección para hacer dos aclaraciones:
+
+Primero, en la medida que hayan versiones en español completas de la información de referencia en el libro, las incluiré en vez de la referencias originales en inglés.
+
+Segundo, si hay algún error o sugerencia en términos de la traducción de este material, no dudes en [informarlo a través de un issue en el repositorio de la traducción](https://github.com/jalejotorresm/rust-book-abridged).
+:::
