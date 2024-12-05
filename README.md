@@ -1,3 +1,3 @@
 # The Rust Book (Abridged)
 
-Read the book [here](https://jasonwalton.ca/rust-book-abridged/).
+Puedes encontrar el libro [aquí](https://rustbook-es.vercel.app/).
